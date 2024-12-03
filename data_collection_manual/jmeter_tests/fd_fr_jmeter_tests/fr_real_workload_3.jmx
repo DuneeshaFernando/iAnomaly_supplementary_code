@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jmeterTestPlan version="1.2" properties="5.0" jmeter="5.6.3">
+  <hashTree>
+    <TestPlan guiclass="TestPlanGui" testclass="TestPlan" testname="fr_real_workload">
+      <elementProp name="TestPlan.user_defined_variables" elementType="Arguments" guiclass="ArgumentsPanel" testclass="Arguments" testname="User Defined Variables">
+        <collectionProp name="Arguments.arguments"/>
+      </elementProp>
+      <boolProp name="TestPlan.functional_mode">false</boolProp>
+      <boolProp name="TestPlan.serialize_threadgroups">false</boolProp>
+    </TestPlan>
+    <hashTree>
+      <kg.apc.jmeter.threads.UltimateThreadGroup guiclass="kg.apc.jmeter.threads.UltimateThreadGroupGui" testclass="kg.apc.jmeter.threads.UltimateThreadGroup" testname="jp@gc - Ultimate Thread Group">
+        <collectionProp name="ultimatethreadgroupdata">
+          <collectionProp name="423754924">
+            <stringProp name="51">3</stringProp>
+            <stringProp name="50">2</stringProp>
+            <stringProp name="48">0</stringProp>
+            <stringProp name="49">1</stringProp>
+            <stringProp name="48">0</stringProp>
+          </collectionProp>
+          <collectionProp name="-759088084">
+            <stringProp name="50">2</stringProp>
+            <stringProp name="1570">13</stringProp>
+            <stringProp name="48">0</stringProp>
+            <stringProp name="49">1</stringProp>
+            <stringProp name="48">0</stringProp>
+          </collectionProp>
+          <collectionProp name="-682852915">
+            <stringProp name="49">1</stringProp>
+            <stringProp name="1607">29</stringProp>
+            <stringProp name="48">0</stringProp>
+            <stringProp name="49">1</stringProp>
+            <stringProp name="48">0</stringProp>
+          </collectionProp>
+          <collectionProp name="373238035">
+            <stringProp name="50">2</stringProp>
+            <stringProp name="1691">50</stringProp>
+            <stringProp name="48">0</stringProp>
+            <stringProp name="49">1</stringProp>
+            <stringProp name="48">0</stringProp>
+          </collectionProp>
+          <collectionProp name="409463891">
+            <stringProp name="51">3</stringProp>
+            <stringProp name="1692">51</stringProp>
+            <stringProp name="48">0</stringProp>
+            <stringProp name="49">1</stringProp>
+            <stringProp name="48">0</stringProp>
+          </collectionProp>
+          <collectionProp name="1197614587">
+            <stringProp name="50">2</stringProp>
+            <stringProp name="1724">62</stringProp>
+            <stringProp name="48">0</stringProp>
+            <stringProp name="49">1</stringProp>
+            <stringProp name="48">0</stringProp>
+          </collectionProp>
+          <collectionProp name="579421546">
+            <stringProp name="49">1</stringProp>
+            <stringProp name="1761">78</stringProp>
+            <stringProp name="48">0</stringProp>
+            <stringProp name="49">1</stringProp>
+            <stringProp name="48">0</stringProp>
+          </collectionProp>
+          <collectionProp name="-2035095022">
+            <stringProp name="50">2</stringProp>
+            <stringProp name="1824">99</stringProp>
+            <stringProp name="48">0</stringProp>
+            <stringProp name="49">1</stringProp>
+            <stringProp name="48">0</stringProp>
+          </collectionProp>
+          <collectionProp name="-1695394485">
+            <stringProp name="51">3</stringProp>
+            <stringProp name="48625">100</stringProp>
+            <stringProp name="48">0</stringProp>
+            <stringProp name="49">1</stringProp>
+            <stringProp name="48">0</stringProp>
+          </collectionProp>
+          <collectionProp name="-1624819606">
+            <stringProp name="50">2</stringProp>
+            <stringProp name="48657">111</stringProp>
+            <stringProp reference="../../collectionProp[9]/stringProp[3]"/>
+            <stringProp reference="../../collectionProp[9]/stringProp[4]"/>
+            <stringProp reference="../../collectionProp[9]/stringProp[5]"/>
+          </collectionProp>
+          <collectionProp name="2051954649">
+            <stringProp name="49">1</stringProp>
+            <stringProp name="48694">127</stringProp>
+            <stringProp reference="../../collectionProp[9]/stringProp[3]"/>
+            <stringProp reference="../../collectionProp[9]/stringProp[4]"/>
+            <stringProp reference="../../collectionProp[9]/stringProp[5]"/>
+          </collectionProp>
+          <collectionProp name="-527468121">
+            <stringProp name="51">3</stringProp>
+            <stringProp name="48757">148</stringProp>
+            <stringProp reference="../../collectionProp[9]/stringProp[3]"/>
+            <stringProp reference="../../collectionProp[9]/stringProp[4]"/>
+            <stringProp reference="../../collectionProp[9]/stringProp[5]"/>
+          </collectionProp>
+          <collectionProp name="-561429861">
+            <stringProp name="50">2</stringProp>
+            <stringProp name="48758">149</stringProp>
+            <stringProp reference="../../collectionProp[9]/stringProp[3]"/>
+            <stringProp reference="../../collectionProp[9]/stringProp[4]"/>
+            <stringProp reference="../../collectionProp[9]/stringProp[5]"/>
+          </collectionProp>
+        </collectionProp>
+        <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller">
+          <intProp name="LoopController.loops">-1</intProp>
+          <boolProp name="LoopController.continue_forever">false</boolProp>
+        </elementProp>
+        <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
+      </kg.apc.jmeter.threads.UltimateThreadGroup>
+      <hashTree>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="HTTP Request" enabled="true">
+          <stringProp name="HTTPSampler.domain">10.100.238.11</stringProp>
+          <stringProp name="HTTPSampler.port">5000</stringProp>
+          <stringProp name="HTTPSampler.protocol">http</stringProp>
+          <stringProp name="HTTPSampler.path">recognize_face</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">replace_text</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+        </HTTPSamplerProxy>
+        <hashTree/>
+      </hashTree>
+    </hashTree>
+  </hashTree>
+</jmeterTestPlan>
