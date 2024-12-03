@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: fd-svc-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: fd-svc-deployment
+  template:
+    metadata:
+      labels:
+        app: fd-svc-deployment
+    spec:
+      containers:
+      - name: fd-svc-deployment
+        image: dtfernando/face_detect_standalone
+        imagePullPolicy: Always
+        resources:
+          limits:
+            memory: "3072Mi"
+            cpu: "1000m"
+        ports:
+        - containerPort: 4000
+      nodeName: standalone_worker2

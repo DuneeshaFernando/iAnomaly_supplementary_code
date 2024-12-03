@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: preprocess-svc-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: preprocess-svc-deployment
+  template:
+    metadata:
+      labels:
+        app: preprocess-svc-deployment
+    spec:
+      containers:
+      - name: preprocess-svc-deployment
+        image: dtfernando/preprocess_standalone
+        imagePullPolicy: Always
+        resources:
+          limits:
+            memory: "1024Mi"
+            cpu: "1000m"
+        ports:
+        - containerPort: 3000
+      nodeName: standalone_worker1
