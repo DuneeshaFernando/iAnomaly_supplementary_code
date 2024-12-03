@@ -1,0 +1,36 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: subscriber-svc-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: subscriber-svc-deployment
+  template:
+    metadata:
+      labels:
+        app: subscriber-svc-deployment
+    spec:
+      containers:
+      - name: subscriber-svc-deployment
+        image: dtfernando/subscriber_preprocessor_flask:latest
+        imagePullPolicy: Always
+        env:
+          - name: AD_URL
+            valueFrom:
+              configMapKeyRef:
+                name: env-configmap-tsad
+                key: AD_URL
+          - name: MDI_URL
+            valueFrom:
+              configMapKeyRef:
+                name: env-configmap-tsad
+                key: MDI_URL
+        resources:
+          limits:
+            memory: "1024Mi"
+            cpu: "1000m"
+        ports:
+          - containerPort: 5001
+      nodeName: worker3
