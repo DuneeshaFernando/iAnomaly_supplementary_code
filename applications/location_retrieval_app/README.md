@@ -1,0 +1,2 @@
+The location retrieval app is a fully http app. Therefore, the MRC e2e version and local Flask versions are the same.
+I have included only the location_retriever_FLASK_LOCAL_RUN.py here. Refer to the iAnomaly_toolkit repo for other codes.
